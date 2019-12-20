@@ -1,6 +1,6 @@
 # MyExperiments
 
-Options on header of Actionbar
+## Options on header of Actionbar
 <p align="center">
   <img src="/Screenshot_1576861610.png" width="250" title="hover text">
   <img src="/Screenshot_1576861617.png" width="250" title="hover text">
