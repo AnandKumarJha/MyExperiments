@@ -1,5 +1,6 @@
 package com.example.myexperiments
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
@@ -24,6 +25,7 @@ class MainActivity : AppCompatActivity() {
 
         if(item.itemId == R.id.item_search){
             showToastMsg("Search")
+            startActivity(Intent(this, ChildActivity::class.java))
         }else if(item.itemId==R.id.item_settings){
             showToastMsg("settting")
         }else if (item.itemId == R.id.item_star){
