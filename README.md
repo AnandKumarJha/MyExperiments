@@ -7,3 +7,6 @@
 </p>
 https://github.com/AnandKumarJha/MyExperiments/blob/master/app/src/main/java/com/example/myexperiments/MainActivity.kt
 
+## Extension Function
+Use this showToastMsg(msgToDisplay) in activity/fragment 
+https://github.com/AnandKumarJha/MyExperiments/blob/master/app/src/main/java/com/example/myexperiments/util/CommonUtil.kt
