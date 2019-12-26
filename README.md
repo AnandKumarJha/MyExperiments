@@ -35,4 +35,5 @@ Here the following method could also be used in place of the above methods
     popBackStackImmediate()
     popBackStackImmediate(String tag, int flag)
     popBackStackImmediate(int id, int flag)
-
+    
+https://github.com/AnandKumarJha/MyExperiments/blob/master/app/src/main/java/com/example/myexperiments/fragment_testing/backstack/BackStackActivity.kt
