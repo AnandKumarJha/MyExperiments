@@ -20,3 +20,5 @@ Here in the above image we can observe that the green layouts are parent layout 
 
 ## SetRetainState
 This is used for retaining the state of a fragment while the activity is rotated. On rotation, the activity is destroyed and at the same time if asynctask is running then it would still run in background would not be able to update the UI because it would not have the latest activity reference. But on setting setRetainState(true) fragment is not destroyed and after recreation of activity the fresh instance of activity is given to the asyncTask contained by fragment. That's how asyncTask or other long running task work in fragment with setRetainState.
+https://github.com/AnandKumarJha/MyExperiments/blob/master/app/src/main/java/com/example/myexperiments/fragment_testing/headless/HeadlessActivity.kt<Br />
+https://github.com/AnandKumarJha/MyExperiments/blob/master/app/src/main/java/com/example/myexperiments/fragment_testing/headless/HeadlessFragment1.kt
