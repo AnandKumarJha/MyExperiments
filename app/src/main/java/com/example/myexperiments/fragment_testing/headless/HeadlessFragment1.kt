@@ -1,4 +1,4 @@
-package com.example.myexperiments
+package com.example.myexperiments.fragment_testing.headless
 
 import android.content.Context
 import android.os.AsyncTask
@@ -23,7 +23,7 @@ class HeadlessFragment1 : Fragment() {
     }
 
     fun setProgressInterface(mActivity: HeadlessActivity) {
-        this.mInteraction = mActivity as Interaction
+        this.mInteraction = mActivity
     }
 
     fun startProgress() {

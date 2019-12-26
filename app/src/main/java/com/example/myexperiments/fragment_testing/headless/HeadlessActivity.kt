@@ -1,10 +1,12 @@
-package com.example.myexperiments
+package com.example.myexperiments.fragment_testing.headless
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import com.example.myexperiments.R
 
-class HeadlessActivity : AppCompatActivity(), HeadlessFragment1.Interaction {
+class HeadlessActivity : AppCompatActivity(),
+    HeadlessFragment1.Interaction {
     override fun progress(progress : Int) {
         Log.e("Progress", ""+progress)
     }
@@ -19,7 +21,10 @@ class HeadlessActivity : AppCompatActivity(), HeadlessFragment1.Interaction {
         if(savedInstanceState==null) {
             mHeadlessFragment1 = HeadlessFragment1()
             mHeadlessFragment1.startProgress()
-            supportFragmentManager.beginTransaction().add(R.id.rl_container, mHeadlessFragment1, HeadlessFragment1.TAG).addToBackStack(null).commit()
+            supportFragmentManager.beginTransaction().add(
+                R.id.rl_container, mHeadlessFragment1,
+                HeadlessFragment1.TAG
+            ).addToBackStack(null).commit()
         }else{
             mHeadlessFragment1 = supportFragmentManager.findFragmentByTag(HeadlessFragment1.TAG) as HeadlessFragment1
         }

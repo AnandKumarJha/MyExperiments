@@ -9,7 +9,7 @@ open class BaseActivity : Activity() {
         val view: View = layoutInflater.inflate(R.layout.activity_base, null, false)
         val container: FrameLayout = view.findViewById<FrameLayout>(R.id.container)
         //attaching child layout with parent
-        val view1 = layoutInflater.inflate(R.layout.activity_child, container, true)
+        layoutInflater.inflate(R.layout.activity_child, container, true)
         super.setContentView(view)
     }
 }

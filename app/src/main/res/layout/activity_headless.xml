@@ -10,7 +10,7 @@
             android:id="@+id/rl_container"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            tools:context=".HeadlessActivity" android:layout_marginBottom="8dp"
+            tools:context=".fragment_testing.headless.HeadlessActivity" android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="8dp"
             app:layout_constraintTop_toTopOf="parent">
 

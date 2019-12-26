@@ -9,9 +9,11 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity android:name=".fragment_testing.headless.HeadlessActivity">
+        </activity>
         <activity android:name=".MainActivity">
         </activity>
-        <activity android:name=".HeadlessActivity">
+        <activity android:name=".fragment_testing.backstack.BackStackActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
