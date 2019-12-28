@@ -37,3 +37,9 @@ Here the following method could also be used in place of the above methods
     popBackStackImmediate(int id, int flag)
     
 https://github.com/AnandKumarJha/MyExperiments/blob/master/app/src/main/java/com/example/myexperiments/fragment_testing/backstack/BackStackActivity.kt
+
+## Broadcast reciever
+https://github.com/AnandKumarJha/MyExperiments/tree/master/app/src/main/java/com/example/myexperiments/broadcast_reciever
+
+## Services
+https://github.com/AnandKumarJha/MyExperiments/tree/master/app/src/main/java/com/example/myexperiments/service_testing
