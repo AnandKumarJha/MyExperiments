@@ -2,7 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.example.myexperiments">
 
-    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
     <application
             android:allowBackup="true"
@@ -11,13 +13,15 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity android:name=".service_testing.ServiceTestingActivity">
+        </activity>
         <activity android:name=".fragment_testing.backstack.BackStackActivity">
         </activity>
         <activity android:name=".fragment_testing.headless.HeadlessActivity">
         </activity>
         <activity android:name=".MainActivity">
         </activity>
-        <activity android:name=".service_testing.ServiceTestingActivity">
+        <activity android:name=".broadcast_reciever.BroadcastTestingActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -30,12 +34,21 @@
         <service android:name=".service_testing.MyBoundedService"/>
         <service android:name=".service_testing.MyUnboundedService"/>
         <service android:name=".service_testing.MyForegroundService"/>
-
-        <service android:name=".service_testing.aidl_example.MyAidlService" android:process=":remote">
+        <service
+                android:name=".service_testing.aidl_example.MyAidlService"
+                android:process=":remote">
             <intent-filter>
                 <action android:name="multiplyservice"/>
             </intent-filter>
         </service>
+
+        <receiver
+                android:name=".broadcast_reciever.MyBroadcastReciever"
+                android:exported="false">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>
