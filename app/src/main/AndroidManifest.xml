@@ -13,6 +13,10 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity android:name=".parcelable.ActivityB">
+        </activity>
+        <activity android:name=".broadcast_reciever.BroadcastTestingActivity">
+        </activity>
         <activity android:name=".service_testing.ServiceTestingActivity">
         </activity>
         <activity android:name=".fragment_testing.backstack.BackStackActivity">
@@ -21,7 +25,7 @@
         </activity>
         <activity android:name=".MainActivity">
         </activity>
-        <activity android:name=".broadcast_reciever.BroadcastTestingActivity">
+        <activity android:name=".parcelable.ActivityA">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
