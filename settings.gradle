@@ -1,1 +1,1 @@
-include ':app', ':mychildmodule', ':commonmodule', ':moduleforactiontesting'
+include ':app', ':myParallelModule', ':commonmodule', ':moduleforactiontesting'

@@ -11,7 +11,7 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/commonmodule" />
             <option value="$PROJECT_DIR$/moduleforactiontesting" />
-            <option value="$PROJECT_DIR$/mychildmodule" />
+            <option value="$PROJECT_DIR$/myParallelModule" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

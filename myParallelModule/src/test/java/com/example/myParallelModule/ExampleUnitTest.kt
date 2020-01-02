@@ -1,4 +1,4 @@
-package com.example.mychildmodule
+package com.example.myParallelModule
 
 import org.junit.Test
 
