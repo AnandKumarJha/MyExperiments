@@ -13,6 +13,8 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity android:name=".parcelable.ActivityA">
+        </activity>
         <activity android:name=".parcelable.ActivityB">
         </activity>
         <activity android:name=".broadcast_reciever.BroadcastTestingActivity">
@@ -25,7 +27,7 @@
         </activity>
         <activity android:name=".MainActivity">
         </activity>
-        <activity android:name=".parcelable.ActivityA">
+        <activity android:name=".module_parent.ModuleParentActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 

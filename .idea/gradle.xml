@@ -9,6 +9,9 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/commonmodule" />
+            <option value="$PROJECT_DIR$/moduleforactiontesting" />
+            <option value="$PROJECT_DIR$/mychildmodule" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
