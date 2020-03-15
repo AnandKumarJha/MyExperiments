@@ -5,6 +5,9 @@
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+
+    <permission android:name="com.myCustomPermission.PERMISSION"/>
 
     <application
             android:allowBackup="true"
@@ -13,27 +16,36 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".parcelable.ActivityA">
-        </activity>
-        <activity android:name=".parcelable.ActivityB">
-        </activity>
-        <activity android:name=".broadcast_reciever.BroadcastTestingActivity">
-        </activity>
-        <activity android:name=".service_testing.ServiceTestingActivity">
-        </activity>
-        <activity android:name=".fragment_testing.backstack.BackStackActivity">
-        </activity>
-        <activity android:name=".fragment_testing.headless.HeadlessActivity">
-        </activity>
-        <activity android:name=".MainActivity">
-        </activity>
-        <activity android:name=".module_parent.ModuleParentActivity">
+
+        <activity
+                android:name=".rxJava.RxTestActivity"
+               >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.VIEW"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
+        <activity android:name=".content_provider.ContentProviderActivity">
+        </activity>
+        <activity android:name=".coroutine.CoroutineActivity"/>
+        <activity android:name=".module_parent.ModuleParentActivity"/>
+        <activity android:name=".parcelable.ActivityA"/>
+        <activity android:name=".parcelable.ActivityB"/>
+        <activity android:name=".broadcast_reciever.BroadcastTestingActivity"/>
+        <activity android:name=".service_testing.ServiceTestingActivity"/>
+        <activity android:name=".fragment_testing.backstack.BackStackActivity"/>
+        <activity android:name=".fragment_testing.headless.HeadlessActivity"/>
+        <activity
+                android:name=".MainActivity"
+                android:exported="false">
+        </activity>
+        <activity
+                android:name=".content_provider.ContactReadActivity"
+                android:excludeFromRecents="true"/>
+
         <activity android:name=".ChildActivity"/>
 
         <service android:name=".service_testing.MyIntentService"/>
@@ -55,6 +67,13 @@
                 <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
             </intent-filter>
         </receiver>
+
+        <provider
+                android:name=".content_provider.BirthProvider"
+                android:authorities="com.javacodegeeks.provider.Birthday"
+                android:exported="true"
+                android:readPermission="com.myCustomPermission.PERMISSION">
+        </provider>
     </application>
 
 </manifest>
